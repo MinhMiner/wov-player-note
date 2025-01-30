@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="grid-container" class="grid"></div>
+
+    <!-- Pop-up -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Select an option:</p>
+            <div class="options">
+                <button onclick="selectOption('👍')">👍</button>
+                <button onclick="selectOption('👎')">👎</button>
+                <button onclick="selectOption('❓')">❓</button>
+            </div>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

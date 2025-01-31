@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+.back-to-home {
+    margin: 10px 10px;
+    font-size: 1.5vw;
+    display: flex;
+}
+
+.back-to-home-button {
+    margin: auto 10px;
+    background-color: transparent;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-image: url('./images/favicon.ico');
+    width: 3vw;
+    height: 3vw;
+    border: none;
+    cursor: pointer;
+    background-position: center;
+}
+
+.change-log {
+    margin: 50px 10px;
+    font-size: 1.5vw;
+}
+
+.change-log * {
+    text-align: left;
+    margin: 10px 30px;
+}

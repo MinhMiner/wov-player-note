@@ -45,7 +45,7 @@ body {
 
 .cell .input-field {
     width: 80%;
-    margin: 10px auto;
+    margin: 20px auto 5px auto;
     padding: 5px;
     font-size: 1vw;
     border: 1px solid #333;
@@ -108,4 +108,35 @@ footer {
     margin: 10vh 1vw;
     font-size: 1.5vw;
     text-align: left;
+}
+
+footer h2, footer h3 {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+footer .change-log {
+    display: flex;
+}
+
+footer .change-log .change-log-button {
+    margin: auto 10px;
+    background-color: transparent;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-image: url('./images/misc/report.png');
+    width: 3vw;
+    height: 3vw;
+    border: none;
+    cursor: pointer;
+    background-position: center;
+}
+
+footer .settings .settings-component {
+    display: flex;
+}
+
+footer .settings .settings-component * {
+    margin: auto 10px;
+    padding: 5px;
 }

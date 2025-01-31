@@ -1,40 +1,74 @@
+// Declarations
+const gridContainer = document.getElementById("grid-container");
+const popup = document.getElementById("popup");
+let enableOneIconNoteOnly = false;
+let disableTextNote = false;
+let gridSize = 4;
+let activeButton = null;
+
 // Generate grid
 
-const gridContainer = document.getElementById("grid-container");
-
-function createEditButton(e) {
+function createEditButton(e, cellWeight) {
     const button = e.appendChild(document.createElement("button"));
     button.classList.add("edit-button");
     button.addEventListener("click", () => openPopup(button));
     button.style.backgroundImage = `url(./images/marker.png)`;
+    
+    button.style.width = `${cellWeight * 0.15}vw`;
+    button.style.height = `${cellWeight * 0.15}vw`;
+    
     return button;
 }
 
 function generateGrid(rows, cols) {
     gridContainer.innerHTML = "";
+    let cellWeight, cellHeight;
+    switch (cols) {
+        case 3:
+            gridContainer.style.gridTemplateColumns = "repeat(3, 30vw)";
+            cellWeight = 30;
+            cellHeight = 27;
+            break;
+        case 5:
+            gridContainer.style.gridTemplateColumns = "repeat(5, 18vw)";
+            cellWeight = 18;
+            cellHeight = 16;
+            break;
+        default:
+            gridContainer.style.gridTemplateColumns = "repeat(4, 23vw)";
+            cellWeight = 23;
+            cellHeight = 20;
+            break;
+    }
 
     for (let i = 0; i < rows * cols; i++) {
         const cell = document.createElement("div");
         cell.classList.add("cell");
 
+        cell.style.width = `${cellWeight}vw`;
+        cell.style.height = `${cellHeight}vh`;
+
         const noteButtons = cell.appendChild(document.createElement("div"));
         noteButtons.classList.add("note-buttons");
 
-        const button1 = createEditButton(noteButtons);
-        const button2 = createEditButton(noteButtons);
+        const button1 = createEditButton(noteButtons, cellWeight);
 
-        const inputField = cell.appendChild(document.createElement("input"));
-        inputField.classList.add("input-field");
-        inputField.type = "text";
-        inputField.placeholder = "Ghi chú ngắn";
+        if (!enableOneIconNoteOnly) {
+            const button2 = createEditButton(noteButtons, cellWeight);
+        }
+
+        if (!disableTextNote) {
+            const inputField = cell.appendChild(document.createElement("input"));
+            inputField.classList.add("input-field");
+            inputField.type = "text";
+            inputField.placeholder = "Ghi chú ngắn";
+        }
 
         gridContainer.appendChild(cell);
     }
 }
 
 // Generate popup
-
-const popup = document.getElementById("popup");
 
 function generatePopup() {
     popup.innerHTML = "";
@@ -337,13 +371,31 @@ function generatePopup() {
     closeButton.textContent = "Close";
 }
 
+// Event listeners
+
 window.onload = () => {
     generateGrid(4, 4);
     generatePopup();
 };
 
+document.getElementById('one-icon-only-checkbox').addEventListener('change', function() {
+    enableOneIconNoteOnly = this.checked;
+    console.log('Enable 1 Icon Note Only:', enableOneIconNoteOnly);
+    generateGrid(gridSize, gridSize);
+});
 
-let activeButton = null;
+document.getElementById('disable-text-note-checkbox').addEventListener('change', function() {
+    disableTextNote = this.checked;
+    console.log('Disable Text Note:', disableTextNote);
+    generateGrid(gridSize, gridSize);
+});
+
+// Others
+
+function changeGridSize(size) {
+    gridSize = size;
+    generateGrid(size, size);
+}
 
 function openPopup(button) {
     activeButton = button;
@@ -359,4 +411,14 @@ function selectOption(option) {
         activeButton.style.backgroundImage = `url(${option})`;
     }
     closePopup();
+}
+
+// Redirections
+
+function redirectToChangeLog() {
+    window.location.href = "change-log.html";
+}
+
+function redirectToHome() {
+    window.location.href = "index.html";
 }

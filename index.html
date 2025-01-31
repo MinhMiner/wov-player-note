@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wolvesville Player Note</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div id="grid-container" class="grid"></div>
@@ -13,8 +14,34 @@
 
     <footer>
         <h2>Wolvesville Custom Player Note Tool</h2>
-        <h3>Version: 1.0 | Ngày cập nhật: TBD</h3>
+        <h3>Version: 1.0.1 | Cập nhật vào: 17h30 31/01/2025</h3>
+        <div class="change-log">
+            <h4>Nhật ký sửa đổi:</h4>
+            <button class="change-log-button" onclick="redirectToChangeLog()"></button>
+        </div>
         <h3>Người bảo trì: Hifumiii</h3>
+
+        <div class="settings">
+            <h4>Cài đặt:</h4>
+            <div class="settings-component">
+                <h5>Số lượng người chơi: </h5>
+                <button class="change-grid-size-button" onclick="changeGridSize(3)">09</button>
+                <button class="change-grid-size-button" onclick="changeGridSize(4)">16</button>
+                <button class="change-grid-size-button" onclick="changeGridSize(5)">25</button>
+            </div>
+            <div class="settings-component">
+                <label>
+                    <input type="checkbox" id="one-icon-only-checkbox">
+                    Mỗi ô chỉ gồm 1 ghi chú bằng biểu tượng
+                </label>
+            </div>
+            <div class="settings-component">
+                <label>
+                    <input type="checkbox" id="disable-text-note-checkbox">
+                    Tắt ghi chú bằng chữ
+                </label>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

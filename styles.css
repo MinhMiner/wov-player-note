@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -6,6 +12,7 @@ body {
 }
 
 .grid {
+    margin: 10px auto;
     display: grid;
     grid-template-columns: repeat(4, 23vw);
     grid-gap: 2vw;
@@ -17,18 +24,32 @@ body {
     height: 20vh;
     background-color: #333;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
     position: relative;
 }
 
-.edit-button {
-    background: none;
+.cell .edit-button {
+    background-color: transparent;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+    margin: auto 2vw;
     border: none;
-    font-size: 24px;
+    font-size: 5vw;
     cursor: pointer;
-    color: white;
+}
+
+.cell .input-field {
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 1vw;
+    border: 1px solid #333;
+    border-radius: 8px;
 }
 
 .popup {
@@ -36,19 +57,55 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    width: auto;
+    max-height: 80vh;
+    overflow-y: auto;
     transform: translate(-50%, -50%);
-    background-color: #444;
+    background-color: #656565;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .popup-content {
-    text-align: center;
+    text-align: left;
 }
 
-.options button {
-    font-size: 24px;
-    margin: 5px;
+.popup .grid {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(10, 5vw);
+    grid-gap: 5px;
+    justify-content: center;
+}
+
+.popup .grid .cell {
+    background-color: transparent;
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.options {
+    background-color: transparent;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 3vw;
+    height: 3vw;
+    border: none;
     cursor: pointer;
+    font-size: 3vw;
+    margin: 5px;
+}
+
+.close-button {
+    font-size: 2vw;
+}
+
+footer {
+    margin: 10vh 1vw;
+    font-size: 1.5vw;
+    text-align: left;
 }

@@ -132,6 +132,11 @@ footer .change-log .change-log-button {
     background-position: center;
 }
 
+footer .settings .warning {
+    margin: 10px auto;
+    color: red;
+}
+
 footer .settings .settings-component {
     display: flex;
 }

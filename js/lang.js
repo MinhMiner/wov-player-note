@@ -4,7 +4,6 @@ function setLanguage(language) {
     fetch(`./lang/${language}.json`)
         .then(response => response.json())
         .then(data => {
-            document.getElementById('version').textContent = data.version;
             document.getElementById('change-log-title').textContent = data.changeLogTitle;
             document.getElementById('maintainer').textContent = data.maintainer;
             document.getElementById('settings-title').textContent = data.settingsTitle;

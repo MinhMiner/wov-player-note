@@ -4,30 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wolvesville Player Note</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div id="grid-container" class="grid"></div>
+    <header>
+        <div id="language-selector" style="display: flex">
+            <button class="en-flag lang-button" style="display: inline-block;" onclick="setLanguage('en')"></button>
+            <button class="vi-flag lang-button" style="display: inline-block;" onclick="setLanguage('vi')"></button>
+        </div>
+        <div id="clear-all-notes">
+            <button class="clear-all-notes-button" style="display: inline-block;" onclick="generateGrid(gridSize, gridSize)"></button>
+        </div>
+    </header>
+
+    <div class="grid" id="grid-container"></div>
 
     <div class="popup-overlay" id="popup-overlay">
-        <div id="popup" class="popup"></div>
+        <div class="popup" id="popup"></div>
     </div>
 
     <footer>
         <h2>Wolvesville Custom Player Note Tool</h2>
-        <h3>Version: 1.0.1 | Cập nhật vào: 17h30 31/01/2025</h3>
+        <h3 id="version">Version: 1.1.0 | Updated at: 14h00 03/02/2025</h3>
         <div class="change-log">
-            <h4>Nhật ký sửa đổi:</h4>
+            <h4 id="change-log-title">Changelog:</h4>
             <button class="change-log-button" onclick="redirectToChangeLog()"></button>
         </div>
-        <h3>Người bảo trì: Hifumiii</h3>
+        <h3 id="maintainer">Maintained by: Hifumiii</h3>
 
         <div class="settings">
-            <h4>Cài đặt:</h4>
-            <h4 class="warning">Lưu ý: Thay đổi cài đặt sẽ xóa toàn bộ ghi chú hiện tại</h4>
+            <h4 id="settings-title">Settings:</h4>
+            <h4 class="warning" id="settings-warning">Warning: Changing any settings will clear all current notes!</h4>
             <div class="settings-component">
-                <h5>Số lượng người chơi: </h5>
+                <h5 id="settings-player-count">Player count: </h5>
                 <button class="change-grid-size-button" onclick="changeGridSize(3)">09</button>
                 <button class="change-grid-size-button" onclick="changeGridSize(4)">16</button>
                 <button class="change-grid-size-button" onclick="changeGridSize(5)">25</button>
@@ -35,24 +45,31 @@
             <div class="settings-component">
                 <label>
                     <input type="checkbox" id="one-icon-only-checkbox">
-                    Mỗi ô chỉ gồm 1 ghi chú bằng biểu tượng
+                    <span id="settings-one-icon-note-only">
+                        Reduce the amount of icon notes
+                    </span>
                 </label>
             </div>
             <div class="settings-component">
                 <label>
                     <input type="checkbox" id="disable-text-note-checkbox">
-                    Tắt ghi chú bằng chữ
+                    <span id="settings-disable-text-note">
+                        Disable text notes
+                    </span>
                 </label>
             </div>
             <div class="settings-component" id="suggest-icon-feature">
                 <label>
                     <input type="checkbox" id="disable-suggest-icon-checkbox">
-                    Tắt gợi ý icon ghi chú từ ghi chú text
+                    <span id="settings-disable-suggesting-icon-note">
+                        Disable suggesting icon note from text note
+                    </span>        
                 </label>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/lang.js"></script>
 </body>
 </html>

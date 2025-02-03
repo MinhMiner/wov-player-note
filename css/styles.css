@@ -11,6 +11,46 @@ body {
     color: white;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+header .lang-button {
+    margin: auto 10px;
+    background-color: transparent;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 3vw;
+    height: 2vw;
+    border: none;
+    cursor: pointer;
+    background-position: center;
+}
+
+header .en-flag {
+    background-image: url("../images/flags/en-flag.png");
+}
+
+header .vi-flag {
+    background-image: url("../images/flags/vi-flag.png");
+}
+
+header .clear-all-notes-button {
+    background-image: url("../images/misc/trashBin.png");
+    margin: auto 10px;
+    background-color: transparent;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 2vw;
+    height: 2vw;
+    border: none;
+    cursor: pointer;
+    background-position: center;
+}
+
 .grid {
     margin: 10px auto;
     display: grid;
@@ -141,7 +181,7 @@ footer .change-log .change-log-button {
     background-color: transparent;
     background-size: cover; 
     background-repeat: no-repeat;
-    background-image: url('./images/misc/report.png');
+    background-image: url('../images/misc/report.png');
     width: 3vw;
     height: 3vw;
     border: none;

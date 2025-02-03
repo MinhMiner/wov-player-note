@@ -665,7 +665,7 @@ function generateGrid(rows, cols) {
             const inputField = cell.appendChild(document.createElement("input"));
             inputField.classList.add("input-field");
             inputField.type = "text";
-            inputField.placeholder = "Ghi chú ngắn";
+            inputField.placeholder = placeholderTextNote;
 
             if (!disableSuggestIconNote) {
                 const suggestIconNote = createEditButton(noteButtons, cellWeight);

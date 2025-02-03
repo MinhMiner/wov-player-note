@@ -22,7 +22,7 @@ body {
     background-color: transparent;
     background-size: cover; 
     background-repeat: no-repeat;
-    background-image: url('./images/favicon.ico');
+    background-image: url('../images/favicon.ico');
     width: 3vw;
     height: 3vw;
     border: none;

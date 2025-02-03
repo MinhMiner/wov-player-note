@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wolvesville Player Note</title>
-    <link rel="stylesheet" href="change-log-styles.css">
+    <link rel="stylesheet" href="./css/change-log-styles.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="back-to-home">
         <button class="back-to-home-button" onclick="redirectToHome()"></button>
-        <h4>Quay lại</h4>
+        <h4>Go back</h4>
     </div>
 
     <div class="change-log-container">
-        <h2>Nhật ký sửa đổi</h2>
+        <h2>Changelog</h2>
+        <div class="change-log">
+            <h3>Version: 1.1.1 | Updated at: 19h00 03/02/2025</h3>
+            <ul>
+                <li>Added English language. English will be the default language (I will only write changelog in English from now on because I'm lazy). You can change between languages on the top left of the page.</li>
+                <li>Added a button to clear all current notes on the top right.</li>
+            </ul>
+        </div>
         <div class="change-log">
             <h3>Version: 1.1.0 | Cập nhật vào: 14h00 03/02/2025</h3>
             <ul>
@@ -43,6 +50,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

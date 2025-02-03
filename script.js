@@ -1,5 +1,6 @@
 // Declarations
 const gridContainer = document.getElementById("grid-container");
+const popupOverlay = document.getElementById("popup-overlay");
 const popup = document.getElementById("popup");
 let enableOneIconNoteOnly = false;
 let disableTextNote = false;
@@ -390,6 +391,8 @@ document.getElementById('disable-text-note-checkbox').addEventListener('change',
     generateGrid(gridSize, gridSize);
 });
 
+popupOverlay.addEventListener("click", closePopup);
+
 // Others
 
 function changeGridSize(size) {
@@ -400,10 +403,14 @@ function changeGridSize(size) {
 function openPopup(button) {
     activeButton = button;
     popup.style.display = "block";
+    popupOverlay.style.display = "block";
+    document.body.style.overflow = "hidden";
 }
 
 function closePopup() {
     popup.style.display = "none";
+    popupOverlay.style.display = "none";
+    document.body.style.overflow = "auto"
 }
 
 function selectOption(option) {

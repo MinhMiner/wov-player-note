@@ -85,6 +85,7 @@ function generatePopup() {
     generalIconsGrid.classList.add("grid");
 
     const options = [
+        "./images/marker.png",
         "./images/general/detectiveDifferentTeam.png",
         "./images/general/detectiveSameTeam.png",
         "./images/general/good.png",

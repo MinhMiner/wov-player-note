@@ -447,7 +447,7 @@ const iconMappings = [
         value: "./images/solo/icon_default_blight_filled@3x.png",
     },
     {
-        keys: ["condo", "con", "bandit"],
+        keys: ["condo", "con", "bandit", "bd"],
         value: "./images/solo/icon_default_bandit_filled@3x.png"
     },
     {
@@ -479,7 +479,7 @@ const iconMappings = [
         value: "./images/others/icon_default_lurker_filled@3x.png",
     },
     {
-        keys: ["thantinhyeu", "cupid"],
+        keys: ["thantinhyeu", "cupid", "cp"],
         value: "./images/others/icon_default_cupid_filled@3x.png"
     },
     {

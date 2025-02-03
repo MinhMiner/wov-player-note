@@ -359,7 +359,7 @@ const iconMappings = [
         value: "./images/werewolves/icon_default_jelly_wolf_filled@3x.png"
     },
     {
-        keys: ["gentlewolf", "gentleww", "gentlew"],
+        keys: ["soilichlam", "gentlewolf", "gentleww", "gentlew"],
         value: "./images/werewolves/icon_default_gentlewolf_filled@3x.png"
     },
     {
@@ -555,7 +555,7 @@ const iconMappings = [
         value: "./images/random/icon_default_random_vote_manipulator@3x.png"
     },
     {
-        keys: ["randomwerewolf"],
+        keys: ["randomwerewolf", "rww", "rw"],
         value: "./images/random/icon_default_random_werewolf_filled@3x.png",
     },
     {
@@ -583,11 +583,11 @@ const iconMappings = [
         value: "./images/random/icon_default_random_rolechanged@3x.png",
     },
     {
-        keys: ["randomvoting"],
+        keys: ["randomvoting", "rv"],
         value: "./images/random/icon_default_random_voting_filled@3x.png",
     },
     {
-        keys: ["randomkiller"],
+        keys: ["randomkiller", "rk"],
         value: "./images/random/icon_default_random_killer_filled@3x.png",
     },
     {

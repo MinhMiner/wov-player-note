@@ -10,7 +10,9 @@
 <body>
     <div id="grid-container" class="grid"></div>
 
-    <div id="popup" class="popup"></div>
+    <div class="popup-overlay" id="popup-overlay">
+        <div id="popup" class="popup"></div>
+    </div>
 
     <footer>
         <h2>Wolvesville Custom Player Note Tool</h2>
@@ -40,6 +42,12 @@
                 <label>
                     <input type="checkbox" id="disable-text-note-checkbox">
                     Tắt ghi chú bằng chữ
+                </label>
+            </div>
+            <div class="settings-component" id="suggest-icon-feature">
+                <label>
+                    <input type="checkbox" id="disable-suggest-icon-checkbox">
+                    Tắt gợi ý icon ghi chú từ ghi chú text
                 </label>
             </div>
         </div>

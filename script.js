@@ -51,7 +51,7 @@ const iconMappings = [
         value: "./images/general/gamblerVillagerIncorrect.png"
     },
     {
-        keys: ["phesoi", "werewolfteam"],
+        keys: ["phesoi", "werewolfteam", "ww", "wolf"],
         value: "./images/general/gamblerWerewolfCorrect.png"
     },
     {
@@ -618,8 +618,8 @@ function createEditButton(e, cellWeight) {
     button.addEventListener("click", () => openPopup(button));
     button.style.backgroundImage = `url(./images/marker.png)`;
     
-    button.style.width = `${cellWeight * 0.15}vw`;
-    button.style.height = `${cellWeight * 0.15}vw`;
+    button.style.width = `${cellWeight * 0.12}vw`;
+    button.style.height = `${cellWeight * 0.12}vw`;
     
     return button;
 }

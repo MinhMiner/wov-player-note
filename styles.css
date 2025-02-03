@@ -31,13 +31,18 @@ body {
     position: relative;
 }
 
+.cell .note-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
 .cell .edit-button {
     background-color: transparent;
     background-size: cover; 
     background-repeat: no-repeat;
     width: 5vw;
     height: 5vw;
-    margin: auto 2vw;
     border: none;
     font-size: 5vw;
     cursor: pointer;

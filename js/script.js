@@ -27,7 +27,7 @@ const iconMappings = [
         value: "./images/general/good.png"
     },
     {
-        keys: ["ac", "xau", "bad", "evil", "bd", "e"],
+        keys: ["ac", "xau", "bad", "evil", "e"],
         value: "./images/general/evil.png"
     },
     {

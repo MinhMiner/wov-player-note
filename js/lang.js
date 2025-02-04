@@ -1,4 +1,10 @@
 let placeholderTextNote = "Short text note";
+let popUpContentGeneralIconText = "General:";
+let popUpContentVillageRolesText = "Village:";
+let popUpContentWerewolfRolesText = "Werewolves:";
+let popUpContentSoloRolesText = "Solo:"
+let popUpContentOtherRolesText = "Others:"
+let popUpContentRandomRolesText = "Random:"
 
 function setLanguage(language) {
     fetch(`./lang/${language}.json`)
@@ -17,6 +23,24 @@ function setLanguage(language) {
             Array.from(document.getElementsByClassName('input-field')).forEach(element => {
                 element.placeholder = data.placeholderTextNote;
             });
+
+            popUpContentGeneralIconText = data.popUpContentGeneralIconText;
+            document.getElementById('general-icons-title').textContent = popUpContentGeneralIconText;
+
+            popUpContentVillageRolesText = data.popUpContentVillageRolesText;
+            document.getElementById('village-roles-title').textContent = popUpContentVillageRolesText;
+
+            popUpContentWerewolfRolesText = data.popUpContentWerewolfRolesText;
+            document.getElementById('werewolf-roles-title').textContent = popUpContentWerewolfRolesText;
+
+            popUpContentSoloRolesText = data.popUpContentSoloRolesText;
+            document.getElementById('solo-roles-title').textContent = popUpContentSoloRolesText;
+
+            popUpContentOtherRolesText = data.popUpContentOtherRolesText;
+            document.getElementById('other-roles-title').textContent = popUpContentOtherRolesText;
+
+            popUpContentRandomRolesText = data.popUpContentRandomRolesText;
+            document.getElementById('random-roles-title').textContent = popUpContentRandomRolesText;
         });
 }
 

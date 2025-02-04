@@ -692,7 +692,9 @@ function generatePopup() {
     generalIcons.classList.add("popup-content");
     generalIcons.classList.add("generalIcons");
 
-    generalIcons.appendChild(document.createElement("h2")).textContent = "Chung:";
+    const generalIconsTitle = generalIcons.appendChild(document.createElement("h2"));
+    generalIconsTitle.id = "general-icons-title";
+    generalIconsTitle.textContent = "General:";
     const generalIconsGrid = generalIcons.appendChild(document.createElement("div"));
 
     generalIconsGrid.classList.add("grid");
@@ -740,7 +742,9 @@ function generatePopup() {
     villageRoles.classList.add("popup-content");
     villageRoles.classList.add("villageRoles");
 
-    villageRoles.appendChild(document.createElement("h2")).textContent = "Dân làng:";
+    const villageRolesTitle = villageRoles.appendChild(document.createElement("h2"));
+    villageRolesTitle.id = "village-roles-title";
+    villageRolesTitle.textContent = "Village:";
     const villageRolesGrid = villageRoles.appendChild(document.createElement("div"));
 
     villageRolesGrid.classList.add("grid");
@@ -808,7 +812,9 @@ function generatePopup() {
     werewolfRoles.classList.add("popup-content");
     werewolfRoles.classList.add("werewolfRoles");
 
-    werewolfRoles.appendChild(document.createElement("h2")).textContent = "Ma sói:";
+    const werewolfRolesTitle = werewolfRoles.appendChild(document.createElement("h2"));
+    werewolfRolesTitle.id = "werewolf-roles-title";
+    werewolfRolesTitle.textContent = "Werewolves:";
     const werewolfRolesGrid = werewolfRoles.appendChild(document.createElement("div"));
 
     werewolfRolesGrid.classList.add("grid");
@@ -860,7 +866,9 @@ function generatePopup() {
     soloRoles.classList.add("popup-content");
     soloRoles.classList.add("soloRoles");
 
-    soloRoles.appendChild(document.createElement("h2")).textContent = "Solo:";
+    soloRolesTitle = soloRoles.appendChild(document.createElement("h2"));
+    soloRolesTitle.id = "solo-roles-title";
+    soloRolesTitle.textContent = "Solo:";
     const soloRolesGrid = soloRoles.appendChild(document.createElement("div"));
 
     soloRolesGrid.classList.add("grid");
@@ -902,7 +910,9 @@ function generatePopup() {
     otherRoles.classList.add("popup-content");
     otherRoles.classList.add("otherRoles");
 
-    otherRoles.appendChild(document.createElement("h2")).textContent = "Khác:";
+    const otherRolesTitle = otherRoles.appendChild(document.createElement("h2"));
+    otherRolesTitle.id = "other-roles-title";
+    otherRolesTitle.textContent = "Others:";
     const otherRolesGrid = otherRoles.appendChild(document.createElement("div"));
 
     otherRolesGrid.classList.add("grid");
@@ -936,7 +946,9 @@ function generatePopup() {
     randomRoles.classList.add("popup-content");
     randomRoles.classList.add("randomRoles");
 
-    randomRoles.appendChild(document.createElement("h2")).textContent = "Ngẫu nhiên:";
+    const randomRolesTitle = randomRoles.appendChild(document.createElement("h2"));
+    randomRolesTitle.id = "random-roles-title";
+    randomRolesTitle.textContent = "Random:";
     const randomRolesGrid = randomRoles.appendChild(document.createElement("div"));
 
     randomRolesGrid.classList.add("grid");

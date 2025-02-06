@@ -507,7 +507,7 @@ const iconMappings = [
         value: "./images/others/icon_default_santa_filled@3x.png"
     },
     {
-        keys: ["danlangthuongngaunhien", "rd", "randomregularvillager", "rvv"],
+        keys: ["danlangthuongngaunhien", "rd", "randomregularvillager", "rrv"],
         value: "./images/random/icon_default_random_villager_normal_filled@3x.png"
     },
     {

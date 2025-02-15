@@ -189,6 +189,36 @@ footer .change-log .change-log-button {
     background-position: center;
 }
 
+footer .contact-info {
+    display: flex;
+}
+
+footer .contact-info .facebook-info-button {
+    margin: auto 10px;
+    background-color: transparent;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-image: url('../images/misc/facebookIcon.png');
+    width: 2vw;
+    height: 2vw;
+    border: none;
+    cursor: pointer;
+    background-position: center;
+}
+
+footer .contact-info .discord-info-button {
+    margin: auto 10px;
+    background-color: transparent;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-image: url('../images/misc/discordIcon.png');
+    width: 2vw;
+    height: 2vw;
+    border: none;
+    cursor: pointer;
+    background-position: center;
+}
+
 footer .settings .warning {
     margin: 10px auto;
     color: red;

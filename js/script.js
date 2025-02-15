@@ -1092,3 +1092,11 @@ function redirectToChangeLog() {
 function redirectToHome() {
     window.location.href = "index.html";
 }
+
+document.getElementById("facebook-info-button").onclick = function() {
+    window.open("https://www.facebook.com/hifumiii", "_blank");
+}
+
+document.getElementById("discord-info-button").onclick = function() {
+    window.open("https://discord.gg/Ms8SvJFnAN", "_blank");
+}

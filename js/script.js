@@ -1094,7 +1094,7 @@ function redirectToHome() {
 }
 
 document.getElementById("facebook-info-button").onclick = function() {
-    window.open("https://www.facebook.com/hifumiii", "_blank");
+    window.open("https://www.facebook.com/96tsubasa", "_blank");
 }
 
 document.getElementById("discord-info-button").onclick = function() {

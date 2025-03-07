@@ -210,6 +210,16 @@ const iconMappings = [
         keys: ["nguoigoihon", "goihon", "conjuror", "conju", "conj"],
         value: "./images/village/icon_default_conjuror_filled@3x.png"
     },
+    // Need to update Vietnamese names and abbreviation later
+    {
+        keys: ["soulbinder"],
+        value: "./images/village/icon_default_soulbinder_filled@3x.png"
+    },
+    {
+        keys: ["ferryman"],
+        value: "./images/village/icon_default_ferryman_filled@3x.png"
+    },
+    //
     {
         keys: ["thitruong", "thi", "mayor"],
         value: "./images/village/icon_default_mayor_filled@3x.png"
@@ -442,6 +452,12 @@ const iconMappings = [
         keys: ["acdich", "blight"],
         value: "./images/solo/icon_default_blight_filled@3x.png",
     },
+    // Update Vietnamese names and abbreviation later
+    {
+        keys: ["shapeshifter"],
+        value: "./images/solo/icon_default_shapeshifter_filled@3x.png",
+    },
+    //
     {
         keys: ["condo", "con", "bandit", "bd"],
         value: "./images/solo/icon_default_bandit_filled@3x.png"
@@ -666,6 +682,8 @@ const villageOptions = [
     "medium",
     "ritualist",
     "conjuror",
+    "soulbinder",
+    "ferryman",
     "mayor",
     "baker",
     "grumpygrandma",
@@ -734,6 +752,7 @@ const soloOptions = [
     "corruptor",
     "illusionist",
     "blight",
+    "shapeshifter",
     "bandit",
     "accomplice",
     "sectleader",

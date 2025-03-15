@@ -452,12 +452,10 @@ const iconMappings = [
         keys: ["acdich", "blight"],
         value: "./images/solo/icon_default_blight_filled@3x.png",
     },
-    // Update Vietnamese names and abbreviation later
     {
-        keys: ["shapeshifter"],
+        keys: ["kebienhinh", "bienhinh", "shapeshifter", "shapeshift", "shape"],
         value: "./images/solo/icon_default_shapeshifter_filled@3x.png",
     },
-    //
     {
         keys: ["condo", "con", "bandit", "bd"],
         value: "./images/solo/icon_default_bandit_filled@3x.png"
@@ -733,7 +731,6 @@ const werewolvesOptions = [
     "sorcerer",
     "blindwerewolf",
     "werewolffan",
-    "partywolf"
 ];
 
 // Solo icons
@@ -772,7 +769,8 @@ const othersOptions = [
     "assassin",
     "easterbunny",
     "pumpkinking",
-    "santa"
+    "santa",
+    "partywolf"
 ];
 
 // Random icons

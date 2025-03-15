@@ -453,7 +453,7 @@ const iconMappings = [
         value: "./images/solo/icon_default_blight_filled@3x.png",
     },
     {
-        keys: ["kebienhinh", "bienhinh", "shapeshifter", "shapeshift", "shape"],
+        keys: ["kebienhinh", "bienhinh", "shapeshifter", "shapeshift", "shape", "sp", "sh", "sf"],
         value: "./images/solo/icon_default_shapeshifter_filled@3x.png",
     },
     {
